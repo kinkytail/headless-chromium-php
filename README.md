@@ -443,7 +443,7 @@ The mouse API is dependent on the page instance and allows you to control the mo
         ->move(10, 20)                              // Moves mouse to position x=10;y=20
         ->click()                                   // left click on position set above
         ->move(100, 200, ['steps' => 5])            // move mouse to x=100;y=200 in 5 equal steps
-        ->click(['button' => Mouse::BUTTON_RIGHT];  // right click on position set above
+        ->click(['button' => Mouse::BUTTON_RIGHT]);  // right click on position set above
         
     // given the last click was on a link, the next step will wait for the page to load after the link was clicked
     $page->waitForReload();
